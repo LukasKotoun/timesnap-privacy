@@ -6,9 +6,9 @@
 <title>TimeSnap – Privacy Policy</title>
 <style>
   :root { color-scheme: light dark; }
-  body { max-width: 720px; margin: 0 auto; padding: 32px 18px 64px; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #111827; background: #fff; }
+  body { max-width: 760px; margin: 0 auto; padding: 32px 18px 64px; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #111827; background: #fff; }
   h1 { font-size: 28px; margin: 0 0 4px; }
-  h2 { font-size: 19px; margin: 32px 0 8px; }
+  h2 { font-size: 18px; margin: 30px 0 8px; }
   p.meta { color: #6B7280; margin: 0 0 24px; }
   li { margin: 4px 0; }
   a { color: #2563EB; }
@@ -17,56 +17,76 @@
 </head>
 <body>
 <h1>TimeSnap – Privacy Policy</h1>
-<p class="meta">Last updated: 26 November 2026</p>
+<p class="meta">Effective date: 26 November 2026</p>
 
-<p>TimeSnap is a voice-first daily time log for Android, made as a student project at the Faculty of Information Technology,
-Brno University of Technology (FIT VUT). This policy explains what data the app uses, where it goes and how you can delete it.
-There are no accounts, no ads, no analytics and no tracking, and we never sell data.</p>
+<h2>1. Scope</h2>
+<p>This Privacy Policy sets out how personal data is processed in connection with the use of the TimeSnap mobile application
+for Android (the "Application"). It applies to every version of the Application, whether obtained through Google Play or
+installed directly from an installation package. By using the Application, the user acknowledges the processing described below.</p>
 
-<h2>Data stored on your phone</h2>
+<h2>2. Controller and contact</h2>
+<p>The Application is developed by the TimeSnap development team as a student project at the Faculty of Information Technology,
+Brno University of Technology, Czech Republic (the "Developer"). Questions and requests concerning personal data may be sent to
+<a href="mailto:xkotou08@vutbr.cz">xkotou08@vutbr.cz</a>.</p>
+
+<h2>3. Data stored on the user's device</h2>
+<p>The following data is created by the user and stored solely in the local storage of the user's device:</p>
 <ul>
-  <li>Your time entries, categories, daily goals, items waiting in "To resolve", saved AI examples and settings.</li>
-  <li>For each voice recording: its transcript and the AI answer, so you can see what an entry was made from.</li>
-  <li>Your own Groq API key, if you enter one. It is stored encrypted and is never included in backups.</li>
+  <li>time entries, categories, daily goals, items awaiting resolution, saved AI examples and application settings;</li>
+  <li>for each voice recording, the resulting transcript and the response of the language model;</li>
+  <li>the user's own Groq API key, if provided, which is stored in encrypted form and excluded from any backup.</li>
 </ul>
-<p>This data stays on your phone. If Android backup is turned on for your Google account, Android may include it in your
-device backup (the API key is excluded). Backups and CSV exports made in the app are saved only where you choose.</p>
+<p>The Developer operates no server and has no access to this data. Where the user has enabled Android backup, the operating
+system may include this data (with the exception of the API key) in the user's device backup under the terms of Google.
+Exports and backups created within the Application are saved only to a location selected by the user.</p>
 
-<h2>Microphone and voice recordings</h2>
-<p>The app records audio only after you tap a microphone button (in the app, in the notification or in the widget).
-To turn the recording into entries, the app sends:</p>
+<h2>4. Voice recordings and transmission to Groq</h2>
+<p>Audio is recorded only upon an explicit action of the user (activation of a microphone control in the Application, its
+notification or its widget). To convert a recording into time entries, the Application transmits:</p>
 <ul>
-  <li>the audio to <a href="https://groq.com">Groq</a> for speech-to-text, and</li>
-  <li>the transcript to Groq's language model, together with the context it needs: the current date and time, your category names
-    and voice keywords, recently used activity names, the entries of that day and your saved AI examples.</li>
+  <li>the audio recording to Groq, Inc. (United States) for speech-to-text conversion; and</li>
+  <li>the resulting transcript to the language model service of Groq, Inc., together with the context necessary for its
+    interpretation: the date and time of the recording, the user's category names and voice keywords, recently used activity
+    names, the entries of the day concerned and the user's saved AI examples.</li>
 </ul>
-<p>Data is sent over an encrypted connection (HTTPS). The audio file is deleted from your phone right after it has been processed;
-without internet it waits on the phone until it can be sent. Groq processes the data under its own
-<a href="https://groq.com/privacy-policy/">privacy policy</a>.</p>
+<p>All transmissions are encrypted (HTTPS). The audio file is deleted from the device once it has been processed; where no
+internet connection is available, it is retained on the device only until it can be transmitted. Groq, Inc. processes the
+transmitted data in accordance with its <a href="https://groq.com/privacy-policy/">Privacy Policy</a>. As Groq, Inc. is
+established in the United States, the data may be processed outside the European Economic Area.</p>
 
-<h2>Weekly insight</h2>
-<p>If you entered your own Groq API key, the app sends a summary of the past week to Groq once a week to get suggestions
-("What could change"): time per category, unlogged time, the most frequent activities and your goals.
-Without your own key this summary is never sent.</p>
+<h2>5. Weekly summary</h2>
+<p>Where the user has entered their own Groq API key, the Application transmits once a week an aggregated summary of the
+preceding week to Groq, Inc. in order to generate suggestions: time per category, unlogged time, the most frequent
+activities and the user's goals. No such summary is transmitted without the user's own API key.</p>
 
-<h2>Phone usage (optional)</h2>
-<p>If you turn on "Show screen time" and allow usage access, the app reads when your screen was on, to draw it in the day dial.
-This information stays on your phone and is never sent anywhere.</p>
+<h2>6. Device usage data</h2>
+<p>If the user enables the "Show screen time" option and grants usage access, the Application reads the periods during which
+the device screen was switched on, solely in order to display them in the Application. This data is never transmitted
+from the device.</p>
 
-<h2>Notifications</h2>
-<p>Notifications are used only for reminders and the quick-capture notification you turn on in Settings › Notifications.</p>
+<h2>7. Permissions</h2>
+<p>The Application requests the microphone permission (voice recording), the notification permission (reminders and
+quick capture) and, optionally, usage access (Section 6). Each permission may be withdrawn at any time in the Android settings.</p>
 
-<h2>Deleting your data</h2>
-<p>You can delete single entries in the app, or all data by uninstalling the app or by clearing its storage in Android settings.
-Nothing is kept on any server of ours – we do not run one.</p>
+<h2>8. Legal basis</h2>
+<p>Voice recordings are processed on the basis of the user's consent, expressed by starting each recording (Article 6(1)(a)
+GDPR), and to the extent necessary to provide the functions requested by the user (Article 6(1)(b) GDPR).
+The Application does not use personal data for advertising, analytics or profiling, and personal data is not sold.</p>
 
-<h2>Children</h2>
-<p>The app is not directed at children under 13.</p>
+<h2>9. Retention and deletion</h2>
+<p>Data stored on the device is retained until the user deletes it. Individual entries may be deleted within the Application;
+all data is erased by uninstalling the Application or by clearing its storage in the Android settings.</p>
 
-<h2>Changes</h2>
-<p>If this policy changes, the new version is published on this page with a new date.</p>
+<h2>10. Rights of the user</h2>
+<p>The user has the right to request access to, rectification or erasure of personal data, restriction of its processing and
+data portability, and the right to object, to the extent provided by the General Data Protection Regulation. As the Developer
+holds no personal data of users, most of these rights are exercised directly within the Application. The user may lodge a
+complaint with the Office for Personal Data Protection (Úřad pro ochranu osobních údajů, <a href="https://uoou.gov.cz">uoou.gov.cz</a>).</p>
 
-<h2>Contact</h2>
-<p>TimeSnap team, FIT VUT – <a href="mailto:xkotou08@vutbr.cz">xkotou08@vutbr.cz</a></p>
+<h2>11. Children</h2>
+<p>The Application is not directed at children under the age of 13.</p>
+
+<h2>12. Changes to this Policy</h2>
+<p>The Developer may amend this Privacy Policy. Any amended version will be published on this page together with its effective date.</p>
 </body>
 </html>
